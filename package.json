@@ -1,0 +1,48 @@
+{
+  "name": "pi-browse-replies",
+  "version": "0.1.0",
+  "description": "Browse, edit, and cleanly copy previous Pi assistant replies from the prompt editor.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "clipboard",
+    "history",
+    "terminal"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreveman/pi-browse-replies.git"
+  },
+  "homepage": "https://github.com/dreveman/pi-browse-replies#readme",
+  "bugs": {
+    "url": "https://github.com/dreveman/pi-browse-replies/issues"
+  },
+  "files": [
+    "extensions/*.ts",
+    "test/*.ts",
+    "tsconfig.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "smoke": "pi --no-extensions --offline -e . --list-models",
+    "test": "pi --no-extensions --offline -e ./test/run.ts --list-models",
+    "verify": "npm run check && npm test && npm run smoke"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/pi-browse-replies.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19",
+    "typescript": "^5.9.3"
+  }
+}
