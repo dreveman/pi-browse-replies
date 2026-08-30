@@ -1,6 +1,6 @@
 {
   "name": "pi-browse-replies",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Browse, edit, and cleanly copy previous Pi assistant replies from the prompt editor.",
   "type": "module",
   "keywords": [
