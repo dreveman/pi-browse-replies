@@ -34,7 +34,7 @@
   },
   "pi": {
     "extensions": [
-      "./extensions/pi-browse-replies.ts"
+      "./extensions/index.ts"
     ]
   },
   "peerDependencies": {
